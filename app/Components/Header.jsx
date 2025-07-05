@@ -18,7 +18,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl md:text-3xl font-bold text-orange-600 italic">
           {/* <Image width={100} height={100} src="/assets/logo.png" alt="logo" /> */}
-          <p className='text-3xl text-lime-600 font-bold flex items-center '><span className='text-slate-600 me-1 text-md'><FaCar/></span>Carwla</p>
+          <p className='text-3xl text-lime-600 font-bold flex items-center '><span className='text-slate-600 me-1 text-md'><FaCar/></span>Carwala</p>
         </Link>
 
         {/* Desktop nav */}
@@ -29,7 +29,7 @@ const Header = () => {
         </ul>
         <div className='flex md:text-2xl md:gap-5 gap-6 items-center'>
           <input type="search" className='p-2 md:block hidden  outline-0 border text-sm rounded-md border-lime-600' placeholder='search' />
-          <Link className='text-xl text-lime-600 ' href="/"><FaUser /></Link>
+          <Link className='text-xl text-lime-600 sm:hidden' href="/"><FaUser /></Link>
         </div>
 
         {/* Mobile menu toggle */}
