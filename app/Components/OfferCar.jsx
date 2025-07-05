@@ -1,30 +1,31 @@
 "use client";
 
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import { FaCar, FaRupeeSign } from "react-icons/fa";
 
 const cars = [
   {
     name: "Nissan Magnite",
-    price: "Rs. 6.14 Lakh onwards",
-    img:"https://imgd.aeplcdn.com/320x180/n/cw/ec/134287/city-exterior-right-front-three-quarter-78.jpeg?isig=0&q=80"
+    price: " 6.14 Lakh onwards",
+    img: "https://imgd.aeplcdn.com/320x180/n/cw/ec/134287/city-exterior-right-front-three-quarter-78.jpeg?isig=0&q=80"
   },
   {
     name: "Honda City",
-    price: "Rs. 12.42 Lakh onwards",
-    img:"https://imgd.aeplcdn.com/320x180/n/cw/ec/175951/slavia-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80"
+    price: " 12.42 Lakh onwards",
+    img: "https://imgd.aeplcdn.com/320x180/n/cw/ec/175951/slavia-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80"
   },
   {
     name: "Skoda Slavia",
-    price: "Rs. 10.49 Lakh onwards",
-    img:"https://imgd.aeplcdn.com/320x180/n/cw/ec/144681/virtus-exterior-right-front-three-quarter-10.jpeg?isig=0&q=80"
+    price: " 10.49 Lakh onwards",
+    img: "https://imgd.aeplcdn.com/320x180/n/cw/ec/144681/virtus-exterior-right-front-three-quarter-10.jpeg?isig=0&q=80"
   },
   {
     name: "Volkswagen Virtus",
-    price: "Rs. 11.56 Lakh onwards",
-    img:"https://imgd.aeplcdn.com/320x180/n/cw/ec/142515/elevate-exterior-right-front-three-quarter-28.jpeg?isig=0&q=80"
+    price: " 11.56 Lakh onwards",
+    img: "https://imgd.aeplcdn.com/320x180/n/cw/ec/142515/elevate-exterior-right-front-three-quarter-28.jpeg?isig=0&q=80"
   },
 ];
 
@@ -66,12 +67,12 @@ export default function PopularCarsCarousel() {
                 <Image
                   src={car.img}
                   alt={car.name}
-                  fill 
+                  fill
                   className="rounded object-contain"
                 />
               </div>
-              <h3 className="mt-2 font-medium">{car.name}</h3>
-              <p className="text-sm text-gray-700">{car.price}</p>
+              <h3 className="font-medium flex items-center"><span className="me-3 text-lime-600" ><FaCar /></span>{car.name}</h3>
+              <p className="text-md text-gray-600 flex items-center"> <span className="text-sm text-black" ><FaRupeeSign /> </span>{car.price}</p>
               <a href="#" className="text-blue-600 text-sm mt-1 inline-block">
                 Check On Road Price
               </a>
