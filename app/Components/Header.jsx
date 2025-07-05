@@ -29,7 +29,7 @@ const Header = () => {
         </ul>
         <div className='flex md:text-2xl md:gap-5 gap-6 items-center'>
           <input type="search" className='p-2 md:block hidden  outline-0 border text-sm rounded-md border-lime-600' placeholder='search' />
-          <Link className='text-xl text-lime-600 sm:hidden' href="/"><FaUser /></Link>
+          {/* <Link className='text-xl text-lime-600 lg:block hidden' href="/"><FaUser /></Link> */}
         </div>
 
         {/* Mobile menu toggle */}
