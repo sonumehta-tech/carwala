@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { FaHome, FaSearch,FaUser } from "react-icons/fa";
+import { FaCar, FaCarAlt, FaCaretRight, FaHome, FaSearch,FaUser } from "react-icons/fa";
 
 import Image from 'next/image';
 import Link from "next/link";
@@ -17,19 +17,20 @@ const Header = () => {
       <div className="flex justify-between items-center px-4 md:px-10 bg-white relative">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl md:text-3xl font-bold text-orange-600 italic">
-          <Image width={100} height={100} src="/assets/logo.png" alt="logo" />
+          {/* <Image width={100} height={100} src="/assets/logo.png" alt="logo" /> */}
+          <p className='text-3xl text-lime-600 font-bold flex items-center '><span className='text-slate-600 me-1 text-md'><FaCar/></span>Carwla</p>
         </Link>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-16 text-md">
-          <li className="md:hover:border-b-2 md:hover:border-b-indigo-600 border-b-2 border-white py-3"><Link href="/newcars">NEW CARS</Link></li>
-          <li className="md:hover:border-b-2 md:hover:border-b-indigo-600 border-b-2 border-white py-3"><Link href="/usedcars">USED CARS</Link></li>
-          <li className="md:hover:border-b-2 md:hover:border-b-indigo-600 border-b-2 border-white py-3"><Link href="/reviws&news">REVIEWS & NEWS</Link></li>
+          <li className="md:hover:border-b-2 md:hover:border-b-lime-600 border-b-2 border-white py-3"><Link className='hover:text-lime-700 font-bold text-slate-700' href="/newcars">NEW CARS</Link></li>
+          <li className="md:hover:border-b-2 md:hover:border-b-lime-600 border-b-2 border-white py-3"><Link className='hover:text-lime-700 font-bold text-slate-700' href="/usedcars">USED CARS</Link></li>
+          <li className="md:hover:border-b-2 md:hover:border-b-lime-600 border-b-2 border-white py-3"><Link className='hover:text-lime-700 font-bold text-slate-700' href="/reviws&news">REVIEWS & NEWS</Link></li>
         </ul>
         <div className='flex md:text-2xl md:gap-5 gap-6 items-center'>
           <FaSearch className='md:hidden text-2xl' />
-          <input type="search" className='p-2 md:block hidden  outline-0 border text-sm rounded-md border-zinc-700' placeholder='search' />
-          <Link className='text-xl ' href="/"><FaUser /></Link>
+          <input type="search" className='p-2 md:block hidden  outline-0 border text-sm rounded-md border-lime-600' placeholder='search' />
+          <Link className='text-xl text-lime-600 ' href="/"><FaUser /></Link>
         </div>
 
         {/* Mobile menu toggle */}
