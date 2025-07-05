@@ -28,13 +28,12 @@ const Header = () => {
           <li className="md:hover:border-b-2 md:hover:border-b-lime-600 border-b-2 border-white py-3"><Link className='hover:text-lime-700 font-bold text-slate-700' href="/reviws&news">REVIEWS & NEWS</Link></li>
         </ul>
         <div className='flex md:text-2xl md:gap-5 gap-6 items-center'>
-          <FaSearch className='md:hidden text-2xl' />
           <input type="search" className='p-2 md:block hidden  outline-0 border text-sm rounded-md border-lime-600' placeholder='search' />
           <Link className='text-xl text-lime-600 ' href="/"><FaUser /></Link>
         </div>
 
         {/* Mobile menu toggle */}
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-800">
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-lime-600">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
