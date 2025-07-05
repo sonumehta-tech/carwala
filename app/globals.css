@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.slick-prev:before,
+.slick-next:before {
+  color:black;
+  background: #000;
+  border-radius: 50px;
+
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0c4a6e #f1f1f1; /* thumb, track */
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0c4a6e;
+  border-radius: 4px;
+  border: 2px solid #f1f1f1;
+}
