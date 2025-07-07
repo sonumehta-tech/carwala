@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CarFilterBar() {
   return (
-    <div className="bg-gray-50 rounded-xl p-4 mt-4 space-y-2 md:px-24 py-10 ">
+    <div className="bg-gray-50 rounded-xl max-w-7xl mx-auto px-4 py-8 space-y-2 ">
       <h2 className="text-xl font-semibold">Find The Cars Of Your Choice</h2>
 
       {/* Budget */}
