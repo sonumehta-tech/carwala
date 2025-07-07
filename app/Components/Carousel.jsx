@@ -23,7 +23,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
             src="https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg"
             alt="pexels-photo"
             fill
-            className="object-cover rounded-md"
+            className="object-contain  md:object-cover rounded-md"
           />
         </div>
 
@@ -33,7 +33,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
             src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg"
             alt="Slide 2"
             fill
-            className="object-cover rounded-md"
+            className="object-contain md:object-cover rounded-md"
           />
         </div>
 
@@ -43,7 +43,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
             src="https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg"
             alt="Slide 3"
             fill
-            className="object-cover rounded-md"
+            className="object-contain md:object-cover rounded-md"
           />
         </div>
       </Carousel>
